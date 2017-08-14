@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebApp Map</title>
+        <link rel="stylesheet" href="MainPage.css">
+        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+        <script src="MainPage.js"></script>
+    </head>
+    <body>
+        <h2>WebApp Map</h2>
+        <div id="map"></div>
+        <div id="legend">
+            <ul>
+                <li>Alert types
+                    <ul style="list-style: none;">
+                        <li><label><input type="checkbox" id="roadworks" checked>Roadworks</label></li>
+                        <li><label><input type="checkbox" id="traffic" checked>Traffic jam</label></li>
+                        <li><label><input type="checkbox" id="breakdowns" checked>Public transport breakdown</label></li>
+                    </ul>
+
+                </li>
+                <li>Alert radius
+                    <ul style="list-style: none;">
+                        <li><label><input type="text" id="radius" name="Radius" value="2.5"></label></li>
+                    </ul>
+                </li>
+            </ul>
+            <button type="button" id="requestButton">Filter alerts</button>
+        </div>
+        <div id="alertDetails">
+            <h3>Alert details</h3>
+            <table id="alertTable"></table>
+        </div>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxphFn2yHTcoyWBDONVCM8KwVuC4iZswk&callback=initMap">
+        </script>
+    </body>
+</html>
+

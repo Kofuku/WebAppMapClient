@@ -1,0 +1,26 @@
+body {
+    background-color: #f0f8ff;
+    margin: 0;
+    width: 100%;
+
+}
+
+#map {
+    height: 800px;
+    width: 70%;
+    float: left;
+}
+
+#legend {
+    height: 1200px;
+    width: 30%;
+    background-color: darkgrey;
+    float: right;
+}
+
+#alertDetails {
+    height: 400px;
+    width: 70%;
+    background-color: beige;
+    float: left;
+}
